@@ -29,7 +29,7 @@
     in rec {
       wg-easy = pkgs.stdenv.mkDerivation (finalAttrs: {
         pname = "wg-easy";
-        version = "15.2.0-beta.3";
+        version = "15.2.1";
 
         src = wg-easy-src + "/src";
 
@@ -37,7 +37,7 @@
           inherit (finalAttrs) pname version;
           src = wg-easy-src + "/src";
           fetcherVersion = 2;
-          hash = "sha256-ZG+/gCntF+WoFVlGO8PF4t6mPQtB6TkQB3h0eHtQ2EY=";
+          hash = "sha256-jJ6H4gKnHywbqiiYd9fXqfnTvPJuPoX76A8i4Lhc26k=";
         };
 
         nativeBuildInputs = [
